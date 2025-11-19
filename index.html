@@ -236,7 +236,7 @@ h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:2rem;text-align:center;color:var
     </div>
 
     <div class="btn-group" style="margin-bottom: 2rem;">
-      <a href="https://wa.me/5521969927796?text=Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20churrasco%20de%20comemora%C3%A7%C3%A3o%20em%2007%2F12%2F2025.%20Total%20de%20pessoas%3A%20___." 
+      <a href="https://wa.me/5521969927796?text=Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20churrasco%20de%20comemora%C3%A7%C3%A3o%20em%2006%2F12%2F2025.%20Total%20de%20pessoas%3A%20___." 
          class="btn" target="_blank" rel="noopener" onclick="confirmRSVP()">
         ✅ Confirmar com Dominique
       </a>
@@ -364,7 +364,7 @@ function sendRSVP(e){
   const nome=document.getElementById('nome').value.trim();
   const pessoas=document.getElementById('pessoas').value.trim();
   const obs=(document.getElementById('obs').value||'Nenhuma').trim();
-  const msg=`Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20churrasco%20de%20comemora%C3%A7%C3%A3o%20em%2007%2F12%2F2025.%0A%0ANome%3A%20${encodeURIComponent(nome)}%0ATotal%20de%20pessoas%3A%20${encodeURIComponent(pessoas)}%0AObserva%C3%A7%C3%A3o%3A%20${encodeURIComponent(obs)}`;
+  const msg=`Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20churrasco%20de%20comemora%C3%A7%C3%A3o%20em%2006%2F12%2F2025.%0A%0ANome%3A%20${encodeURIComponent(nome)}%0ATotal%20de%20pessoas%3A%20${encodeURIComponent(pessoas)}%0AObserva%C3%A7%C3%A3o%3A%20${encodeURIComponent(obs)}`;
   window.open(`https://wa.me/5521972260262?text=${msg}`,'_blank');
   confirmRSVP();
 }
@@ -437,15 +437,15 @@ document.addEventListener('keydown',e=>{
 });
 
 function addToCalendar(){
-  const googleUrl='https://calendar.google.com/calendar/render?action=TEMPLATE&text=Churrasco%20%E2%80%94%20Frederic%20%26%20Dominique&dates=20251207T140000Z/20251207T210000Z&details=Churrasco%20de%20comemora%C3%A7%C3%A3o%20do%20casamento%20de%20Frederic%20e%20Dominique&location=Travessa%20Ala%C3%ADde%2C%203%2C%20Jacutinga%2C%20Mesquita%20-%20RJ&ctz=America/Sao_Paulo';
+  const googleUrl='https://calendar.google.com/calendar/render?action=TEMPLATE&text=Churrasco%20%E2%80%94%20Frederic%20%26%20Dominique&dates=20251206T140000Z/20251206T210000Z&details=Churrasco%20de%20comemora%C3%A7%C3%A3o%20do%20casamento%20de%20Frederic%20e%20Dominique&location=Travessa%20Ala%C3%ADde%2C%203%2C%20Jacutinga%2C%20Mesquita%20-%20RJ&ctz=America/Sao_Paulo';
   const ics=`BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Churrasco Frederic & Dominique//PT-BR
 BEGIN:VEVENT
 UID:${Date.now()}@churrasco
 DTSTAMP:${new Date().toISOString().replace(/[-:]/g,'').split('.')[0]}Z
-DTSTART:20251207T140000Z
-DTEND:20251207T210000Z
+DTSTART:20251206T140000Z
+DTEND:20251206T210000Z
 SUMMARY:Churrasco — Frederic & Dominique
 DESCRIPTION:Churrasco de comemoração do casamento com churrasqueiro, bartender e música!
 LOCATION:Travessa Alaíde, 3, Jacutinga, Mesquita — RJ
