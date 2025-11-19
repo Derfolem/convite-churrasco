@@ -242,7 +242,7 @@ h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:2rem;text-align:center;color:var
       </a>
       <a href="https://wa.me/5521972260262?text=Ol%C3%A1%2C%20vim%20pelo%20convite%20do%20churrasco%20e%20gostaria%20de%20confirmar." 
          class="btn btn-secondary" target="_blank" rel="noopener" onclick="confirmRSVP()">
-        📝 Falar com Frederic
+        📝 Confirmar com Frederic
       </a>
     </div>
 
@@ -341,7 +341,7 @@ h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:2rem;text-align:center;color:var
         💬 Falar com a Dominique
       </a>
       <a href="https://wa.me/5521972260262" target="_blank" rel="noopener" class="btn btn-secondary">
-        💬 Falar com o Frederic
+        💬 Confirmar com o Frederic
       </a>
     </div>
   </div>
@@ -365,7 +365,7 @@ function sendRSVP(e){
   const pessoas=document.getElementById('pessoas').value.trim();
   const obs=(document.getElementById('obs').value||'Nenhuma').trim();
   const msg=`Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20churrasco%20de%20comemora%C3%A7%C3%A3o%20em%2007%2F12%2F2025.%0A%0ANome%3A%20${encodeURIComponent(nome)}%0ATotal%20de%20pessoas%3A%20${encodeURIComponent(pessoas)}%0AObserva%C3%A7%C3%A3o%3A%20${encodeURIComponent(obs)}`;
-  window.open(`https://wa.me/5521969927796?text=${msg}`,'_blank');
+  window.open(`https://wa.me/5521972260262?text=${msg}`,'_blank');
   confirmRSVP();
 }
 
